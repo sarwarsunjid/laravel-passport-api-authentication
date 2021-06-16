@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\UserAuthController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +20,10 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::post('/register', 'Auth\UserAuthController@register');
-Route::post('/login', 'Auth\UserAuthController@login');
+//Route::post('/register', 'Auth\UserAuthController@register');
+// Route::post('/login', 'Auth\UserAuthController@login');
 
-Route::apiResource('/employee', 'EmployeeController')->middleware('auth:api');
+// Route::apiResource('/employee', [App\Http\Controllers\Auth\EmployeeController::class])->middleware('auth:api');
+
+Route::post('/register', [App\Http\Controllers\Auth\UserAuthController::class, 'register']);
+
