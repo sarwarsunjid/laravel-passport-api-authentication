@@ -23,7 +23,9 @@ use App\Http\Controllers\EmployeeController;
 //Route::post('/register', 'Auth\UserAuthController@register');
 // Route::post('/login', 'Auth\UserAuthController@login');
 
-// Route::apiResource('/employee', [App\Http\Controllers\Auth\EmployeeController::class])->middleware('auth:api');
 
+//Route::apiResource('/employee', [App\Http\Controllers\Auth\EmployeeController::class])->middleware('auth:api');
+
+Route::post('/login', [App\Http\Controllers\Auth\UserAuthController::class, 'login']);
 Route::post('/register', [App\Http\Controllers\Auth\UserAuthController::class, 'register']);
 
