@@ -47,7 +47,7 @@ http://127.0.0.1:8000/api/login
 Accept: application/json
 ```
 
-![accept](https://user-images.githubusercontent.com/31752675/139531183-b7fed6a1-8824-4b94-9100-99d9ef931498.png)
+![acceptjson](https://user-images.githubusercontent.com/31752675/139531366-3cfacb3e-7da4-4187-b83d-80a11bdc84eb.png)
 
 
 ## Create A New User 
